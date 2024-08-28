@@ -1,5 +1,5 @@
 import random
-import time
+from time import sleep
 
 
 def play(number):
@@ -16,7 +16,7 @@ def play(number):
                print("Your guess must be between 1 and 9\n")
                guess = int(input("Enter your guess: "))
            if guess == number:
-               time.sleep(1)
+               sleep(1)
                print("You got it!")
                break
            else:
@@ -32,7 +32,7 @@ def play(number):
            print("please enter a number")
     else:
         print("You are out of lives, Game over")
-        time.sleep(2)
+        sleep(2)
 
 
 while True:
